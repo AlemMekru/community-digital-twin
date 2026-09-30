@@ -180,3 +180,4 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 image.png
+data/raw/burnaby_streets.geojson
