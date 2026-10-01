@@ -181,3 +181,8 @@ cython_debug/
 .cursorindexingignore
 image.png
 data/raw/burnaby_streets.geojson
+
+# macOS
+.DS_Store
+.DS_Store
+.DS_Store
