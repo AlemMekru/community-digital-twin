@@ -1,8 +1,10 @@
 # Community Digital Twin
 
-Research platform for AI-driven, explainable and interoperable decision intelligence over community digital twins.
+Research platform for AI-driven, explainable, and interoperable decision intelligence over community digital twins.
 
 **Burnaby, British Columbia, Canada** is the initial real-world case study, presented publicly as **Burnaby Digital Twin**.
+
+🌐 **Live Platform:** https://burnabydigitaltwin.ca
 
 ## Researcher
 
@@ -39,8 +41,10 @@ The current platform includes:
 - Digital-twin `RoadSegment` domain entities
 - Automated data-mapping tests
 - Interactive 3D Burnaby city visualization
-- Building, street, green-space and transit layers
+- Building, street, green-space, and transit layers
 - Next.js and TypeScript research frontend
+- AWS-hosted production environment
+- Automated CI/CD deployment from GitHub
 
 The 3D environment visualizes municipal spatial data with illustrative animation. Vehicle and transit movement does not currently represent live City of Burnaby operational feeds.
 
@@ -75,16 +79,43 @@ Decision-Support Applications
 - ArcGIS REST APIs
 - GeoJSON
 - Pytest
+- AWS S3
+- AWS CloudFront
+- AWS CodeBuild
+- AWS CodePipeline
+- AWS Certificate Manager
+- Amazon Route 53
 
 ### Planned
 
 - FastAPI
 - PostgreSQL / PostGIS
-- AWS
 - Predictive and simulation models
 - LLM and agentic AI
 - Evidence and provenance services
 - Explainable AI
+
+## Cloud Architecture
+
+The public research platform is deployed on AWS using an automated CI/CD workflow.
+
+```text
+GitHub
+  ↓
+AWS CodePipeline
+  ↓
+AWS CodeBuild
+  ↓
+Amazon S3
+  ↓
+Amazon CloudFront
+  ↓
+HTTPS / TLS
+  ↓
+burnabydigitaltwin.ca
+```
+
+The deployment is hosted in the **AWS Canada (Central) region** where applicable, with CloudFront providing secure global content delivery.
 
 ## Research Status
 
@@ -99,13 +130,17 @@ Decision-Support Applications
 - Automated mapper testing
 - Interactive Burnaby 3D visualization
 - Research web platform
+- AWS cloud deployment
+- HTTPS custom domain
+- GitHub-to-AWS CI/CD pipeline
 
 ### In Progress
 
 - Digital Twin State Layer
 - Persistent geospatial state
 - Additional community entities
-- Cloud deployment
+- Expanded municipal datasets
+- Simulation capabilities
 
 ### Planned
 
@@ -116,11 +151,31 @@ Decision-Support Applications
 - Agentic decision-support workflows
 - Cross-community interoperability experiments
 
+## Deployment
+
+Production:
+
+**https://burnabydigitaltwin.ca**
+
+The production site is delivered through Amazon CloudFront from an Amazon S3 origin. Application builds and deployments are automated through AWS CodePipeline and AWS CodeBuild.
+
 ## Documentation
 
 - [`RESEARCH.md`](RESEARCH.md) — research direction
 - [`ARCHITECTURE.md`](ARCHITECTURE.md) — system architecture
 - [`DATA.md`](DATA.md) — data sources and ingestion
+
+## Contact
+
+For research collaboration, technical discussions, or professional inquiries:
+
+- **Researcher:** Alem Mekru
+- **Email:** alemzewd.alemayehu@almamater.si
+- **LinkedIn:** https://www.linkedin.com/in/alemmekru/
+- **GitHub:** https://github.com/AlemMekru
+- **Live Platform:** https://burnabydigitaltwin.ca
+
+Research and collaboration inquiries are welcome.
 
 ## Disclaimer
 

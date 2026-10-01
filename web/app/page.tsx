@@ -217,7 +217,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+     {/* Footer */}
       <footer className="border-t border-slate-800 bg-slate-950">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-6 py-10 text-sm text-slate-500 md:flex-row md:items-end md:justify-between lg:px-8">
           <div>
@@ -228,6 +228,13 @@ export default function Home() {
             <p className="mt-1">
               Applied AI Research Platform
             </p>
+
+            <a
+              href="mailto:alemzewd.alemayehu@almamater.si"
+              className="mt-3 inline-block text-cyan-400 transition hover:text-cyan-300"
+            >
+              alemzewd.alemayehu@almamater.si
+            </a>
           </div>
 
           <div className="max-w-xl md:text-right">
@@ -235,7 +242,27 @@ export default function Home() {
               Alem Mekru · PhD Researcher in Applied Artificial Intelligence
             </p>
 
-            <p className="mt-2">
+            <div className="mt-2 flex gap-4 md:justify-end">
+              <a
+                href="https://www.linkedin.com/in/alemmekru/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-slate-300"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/AlemMekru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-slate-300"
+              >
+                GitHub
+              </a>
+            </div>
+
+            <p className="mt-3">
               Independent research project. Not affiliated with or endorsed by
               the City of Burnaby.
             </p>
